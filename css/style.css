@@ -1,62 +1,128 @@
-/* Enter your Styles below! */
-
-body { 
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-     }
-
-h1, h2, h3, h4 {
-    font-family: Helvetica, sans-serif;
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Georgia";
+  color: #777;
 }
 
-h1 {
-    font-size: 48px;
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
-h2 {
-    font-size: 36px;
+li {
+  display: inline;
+  
+}
+
+
+/* unvisited link */
+a:link {
+  color: black;
+  font-family: Georgia;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: grey;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  
+}
+
+
+.bgimg, .bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg{
+  background-image: url("https://thumbs.dreamstime.com/z/asian-clouds-chinese-japanese-line-cloud-decorative-collection-traditional-korean-vector-elements-oriental-illustration-161051762.jpg");
+  min-height: 100%;
+}
+
+
+.bgimg-1 {
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/007/367/432/large/tianqi-chen-wechatimg4.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 36px;
+  letter-spacing: 5px;
 }
 
 h3 {
-    font-size: 28px;
-}
-h4 {
-    font-size: 24px;
-}
-
-blockquote {
-    margin: 20px 60px;
-    font-family: Helvetica, sans-serif;
-}
-
-header {margin-bottom: 20px;}
-
-/* ensures that your images stretch the width of their containers */
-img { width: 100%; }
-
-a { 
-    color: red;
-    text-decoration: none;
-     }
-a:hover { color: black; }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    width: 60%;
-    margin: auto;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Georgia";
+  color: #111;
+  text-align: center;
+  align-items:center;
+justify-content: center;
+margin-top: 100px;
 }
 
-.grid div {
-    background-color: #ccc;
-    padding: 20px;
+body, html, .main {
+  height: 100%;
 }
 
-@media only screen and (min-width:768px) {
 
+.gumihocon {
+color: #777;
+background-color:white;
+
+  margin-bottom: 100px;
+  margin-right: 300px;
+  margin-left: 300px;
+  align-items:center;
+justify-content: center;
+display: flex;
 }
 
-@media only screen and (min-width:1224px) {
-
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg, .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
+</style>
